@@ -1,0 +1,232 @@
+<html>
+<head>
+    <title>Food App By Sagar Patankar</title>
+
+<style>
+* { 
+    font-size: 30px; 
+    text-align:center; 
+}
+
+body { 
+    background-color: Seashell; 
+}
+
+h1 { 
+    background-color: FireBrick;
+    color:white;
+    border:solid; 
+    width:40%; 
+    border-color: DarkRed;
+    border-radius:30px;
+    border-width:7px;
+    margin:2% auto; 
+    padding:2%;
+    text-align:center; 
+}
+
+.fc{
+    width: 60%;
+    margin: 2% auto;
+    padding: 1.5%;
+    border: solid 6px SaddleBrown;
+    border-radius: 30px;
+    background-color: FloralWhite;
+}
+
+h2{
+    font-family:Segoe UI;
+}
+
+input[type="submit"] {
+  background-color: IndianRed;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  padding: 10px 20px;
+  border: solid;
+  width:20%;
+  border-color: FireBrick;
+  border-width: 4px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Food You Like App</h1>
+
+<div class="fc">
+    <form onsubmit="show()">
+	<label> Name Please </label> 
+	<br/>
+        <input type="text" id="name" placeholder="Enter Your Name"/>
+        <br><br>
+	<label> Select Your Favourite Food <label>
+	<br/>
+        <select id="food">
+		<option value="Shawarma">Shawarma</option>
+<option value="South Indian">South Indian</option>
+<option value="Chinese">Chinese</option>
+<option value="Italian">Italian</option>
+<option value="Mexican">Mexican</option>
+<option value="Thai">Thai</option>
+<option value="Japanese">Japanese</option>
+<option value="Korean">Korean</option>
+<option value="Continental">Continental</option>
+<option value="Fast Food">Fast Food</option>
+<option value="Street Food">Street Food</option>
+<option value="Bakery">Bakery</option>
+<option value="Desserts">Desserts</option>
+<option value="Beverages">Beverages</option>
+<option value="Mughlai">Mughlai</option>
+<option value="Hyderabadi">Hyderabadi</option>
+<option value="Bengali">Bengali</option>
+<option value="Gujarati">Gujarati</option>
+<option value="Rajasthani">Rajasthani</option>
+<option value="Punjabi">Punjabi</option>
+<option value="Maharashtrian">Maharashtrian</option>
+<option value="Goan">Goan</option>
+<option value="Kerala">Kerala</option>
+<option value="Andhra">Andhra</option>
+<option value="Chettinad">Chettinad</option>
+<option value="Sindhi">Sindhi</option>
+<option value="Parsi">Parsi</option>
+<option value="Arabian">Arabian</option>
+<option value="Turkish">Turkish</option>
+<option value="Lebanese">Lebanese</option>
+<option value="African">African</option>
+<option value="American">American</option>
+<option value="BBQ">BBQ</option>
+<option value="Seafood">Seafood</option>
+<option value="Healthy Food">Healthy Food</option>
+<option value="Salads">Salads</option>
+<option value="Sandwiches">Sandwiches</option>
+<option value="Biryani">Biryani</option>
+<option value="Pizza">Pizza</option>
+<option value="Pasta">Pasta</option>
+<option value="Sushi">Sushi</option>
+<option value="Wraps & Rolls">Wraps & Rolls</option>
+<option value="Tandoori">Tandoori</option>
+<option value="Chaat">Chaat</option>
+<option value="Ice Cream">Ice Cream</option>
+<option value="Juices">Juices</option>
+<option value="Shakes">Shakes</option>
+<option value="Smoothies">Smoothies</option>
+<option value="Soups">Soups</option>
+<option value="Snacks">Snacks</option>
+<option value="Dosa & Idli">Dosa & Idli</option>
+<option value="Thali">Thali</option>
+<option value="Bowl Meals">Bowl Meals</option>
+<option value="Home Style Food">Home Style Food</option>
+<option value="Cutting Chai">Cutting Chai</option>
+<option value="Kebabs">Kebabs</option>
+<option value="Sweets">Sweets</option>
+<option value="North Indian">North Indian</option>	
+
+</select>
+
+<br/><br/>
+        <input type="submit"/>
+	<br/><br/>
+    </form>
+
+    <h2 id="msg"></h2>
+</div>
+	<br/>
+	<h2 id="msg"></h2>
+<script>
+function show() {
+    event.preventDefault();
+
+    let name = document.getElementById("name");
+    let northIndian = document.getElementById("North Indian");
+let southIndian = document.getElementById("South Indian");
+let chinese = document.getElementById("Chinese");
+let italian = document.getElementById("Italian");
+let mexican = document.getElementById("Mexican");
+let thai = document.getElementById("Thai");
+let japanese = document.getElementById("Japanese");
+let korean = document.getElementById("Korean");
+let continental = document.getElementById("Continental");
+let fastFood = document.getElementById("Fast Food");
+let streetFood = document.getElementById("Street Food");
+let bakery = document.getElementById("Bakery");
+let desserts = document.getElementById("Desserts");
+let beverages = document.getElementById("Beverages");
+let mughlai = document.getElementById("Mughlai");
+let hyderabadi = document.getElementById("Hyderabadi");
+let bengali = document.getElementById("Bengali");
+let gujarati = document.getElementById("Gujarati");
+let rajasthani = document.getElementById("Rajasthani");
+let punjabi = document.getElementById("Punjabi");
+let maharashtrian = document.getElementById("Maharashtrian");
+let goan = document.getElementById("Goan");
+let kerala = document.getElementById("Kerala");
+let andhra = document.getElementById("Andhra");
+let chettinad = document.getElementById("Chettinad");
+let sindhi = document.getElementById("Sindhi");
+let parsi = document.getElementById("Parsi");
+let arabian = document.getElementById("Arabian");
+let turkish = document.getElementById("Turkish");
+let lebanese = document.getElementById("Lebanese");
+let african = document.getElementById("African");
+let american = document.getElementById("American");
+let bbq = document.getElementById("BBQ");
+let seafood = document.getElementById("Seafood");
+let healthyFood = document.getElementById("Healthy Food");
+let salads = document.getElementById("Salads");
+let sandwiches = document.getElementById("Sandwiches");
+let biryani = document.getElementById("Biryani");
+let pizza = document.getElementById("Pizza");
+let pasta = document.getElementById("Pasta");
+let sushi = document.getElementById("Sushi");
+let wrapsRolls = document.getElementById("Wraps & Rolls");
+let tandoori = document.getElementById("Tandoori");
+let chaat = document.getElementById("Chaat");
+let iceCream = document.getElementById("Ice Cream");
+let juices = document.getElementById("Juices");
+let shakes = document.getElementById("Shakes");
+let smoothies = document.getElementById("Smoothies");
+let soups = document.getElementById("Soups");
+let snacks = document.getElementById("Snacks");
+let dosaIdli = document.getElementById("Dosa & Idli");
+let thali = document.getElementById("Thali");
+let bowlMeals = document.getElementById("Bowl Meals");
+let homeStyleFood = document.getElementById("Home Style Food");
+let cuttingChai = document.getElementById("Cutting Chai");
+let kebabs = document.getElementById("Kebabs");
+let sweets = document.getElementById("Sweets");
+let shawarma = document.getElementById("Shawarma");
+let msg = document.getElementById("msg");
+
+    if (name.value === "") {
+        alert("Please Enter Name");
+        msg.innerHTML = "";
+        name.focus();
+        return;
+    }
+
+    if (name.value.trim() === "") {
+        alert("Name Shouldn't Be Only Spaces");
+        msg.innerHTML = "";
+        name.focus();
+        name.value = "";
+        return;
+    }
+
+    if (!name.value.match(/^[A-Za-z]+$/)) {
+        alert("Name Should Contain Only Letters");
+        msg.innerHTML = "";
+        name.focus();
+        name.value = "";
+        return;
+    }
+
+    let ans = "Name="+name.value+"   Food="+food.value;
+    msg.innerHTML = ans;
+}
+</script>
+
+</body>
+</html>
